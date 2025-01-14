@@ -1,16 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      
-    </>
-  )
+    <div>
+      <h1>
+        <span>emojipedia</span>
+      </h1>
+
+      <dl className="dictionary">
+        <div className="term">
+          <dt>
+            <span className="emoji" role="img" aria-label="Tense Biceps">
+              💪
+            </span>
+            <span>Tense Biceps</span>
+          </dt>
+          <dd>
+            “You can do that!” or “I feel strong!” Arm with tense biceps. Also
+            used in connection with doing sports, e.g. at the gym.
+          </dd>
+        </div>
+      </dl>
+    </div>
+  );
 }
 
-export default App
+export default App;
